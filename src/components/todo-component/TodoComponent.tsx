@@ -8,7 +8,7 @@ type TodoPropType = {
 
 const TodoComponent: FC<TodoPropType> = ( {item} ) => {
     return(
-        <div> {item.id} -- {item.todo} - {item.completed ? "True" : "False"}</div>
+        <div>{item.title} - {item.completed ? "Completed" : "Not Completed"}</div>
     );
 
 };

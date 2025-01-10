@@ -8,10 +8,10 @@ const TodoComponents = () => {
 
     useEffect(() => {
 
-        fetch('https://dummyjson.com/todos')
+        fetch('https://jsonplaceholder.typicode.com/todos')
             .then(value => value.json())
-            .then(data => {
-                setTodos(data.todos)
+            .then(response => {
+                setTodos(response)
             });
         return () => {
             console.log('done')
