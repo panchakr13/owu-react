@@ -1,11 +1,10 @@
-const baseUrl = 'https://jsonplaceholder.typicode.com';
+const baseUrl = 'https://dummyjson.com';
 export const urls = {
     users:{
-        allUsers:baseUrl + '/users',
-        byId: (id:number) => {
-            return baseUrl + '/' +id;
-        }
+        allUsers:baseUrl + '/users'
     },
 
-    posts:{}
+    posts:{
+        allPosts:baseUrl + '/posts'
+    }
 }
