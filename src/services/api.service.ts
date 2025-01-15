@@ -1,15 +1,6 @@
-import {IUser} from "../models/IUser.ts";
-import {urls} from "../constants/urls.ts";
+import {IUserResponseModel} from "../models/IUserResponseModel.ts";
 
-
-export const userService ={
-    getUsers: async ():Promise<IUser[]> => {
-        return await fetch(urls.users.allUsers)
-            .then(value => value.json())
-    },
-
-    getUser:async (id:number) => {
-        return await fetch(urls.users.byId(id))
-            .then(value => value.json());
-    }
+export const getAllUsers = async (skip:string):Promise<IUserResponseModel> => {
+    return await fetch('https://dummyjson.com/users?skip='+skip)
+        .then(value => value.json());
 }
