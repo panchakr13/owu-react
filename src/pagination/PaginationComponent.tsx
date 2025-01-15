@@ -9,7 +9,7 @@ const PaginationComponent = () => {
                 const skip = skipQuery.get('skip')
                 if (skip) {
                     let currentSkip = +skip;
-                    currentSkip -= 30;
+                    currentSkip -= 10;
                     setSkipQuery({skip: currentSkip.toString()})}
 
             }}>prev
@@ -19,7 +19,7 @@ const PaginationComponent = () => {
                 const skip = skipQuery.get('skip')
                 if (skip) {
                     let currentSkip = +skip;
-                    currentSkip += 30;
+                    currentSkip += 10;
                     setSkipQuery({skip: currentSkip.toString()})
                 }
 
