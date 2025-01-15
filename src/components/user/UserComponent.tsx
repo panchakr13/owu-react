@@ -1,5 +1,5 @@
 import {FC} from "react";
-import {IUser} from "../../model/IUser.ts";
+import {IUser} from "../../models/IUser.ts";
 import {Link} from "react-router-dom";
 
 type UserTypeProps = {

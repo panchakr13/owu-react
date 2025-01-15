@@ -1,4 +1,4 @@
-import {IUser} from "../model/IUser.ts";
+import {IUser} from "../models/IUser.ts";
 import {urls} from "../constants/urls.ts";
 
 
