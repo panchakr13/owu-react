@@ -12,7 +12,7 @@ const GetCars = () => {
         getCars().then((cars) => {
             setCars(cars)
         })
-    }, [cars]);
+    }, []);
 
     return (
         <>
